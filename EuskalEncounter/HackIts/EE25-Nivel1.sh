@@ -19,7 +19,7 @@ for FilaZonaA in {A..T}
   do
     for ColumnaZonaA in {1..128}
       do
-        echo -n $(curl -s https://eps.party.eus/ee25/map/lookup/A$FilaZonaA"_"$ColumnaZonaA | jq -r '.state')|cat -A >> /PuestosHackIt2017.txt
+        echo -n $(curl -s https://eps.party.eus/ee25/map/lookup/A$FilaZonaA"_"$ColumnaZonaA | jq -r '.state') | cat -A >> /PuestosHackIt2017.txt
       done
   done
 
@@ -30,7 +30,7 @@ for FilaZonaB in {A..T}
   do
     for ColumnaZonaB in {1..128}
       do
-        echo -n $(curl -s https://eps.party.eus/ee25/map/lookup/B$FilaZonaB"_"$ColumnaZonaB | jq -r '.state')|cat -A >> /PuestosHackIt2017.txt
+        echo -n $(curl -s https://eps.party.eus/ee25/map/lookup/B$FilaZonaB"_"$ColumnaZonaB | jq -r '.state') | cat -A >> /PuestosHackIt2017.txt
       done
   done
 
